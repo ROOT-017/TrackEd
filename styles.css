@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+ /*     background-image: url(./assets/TERENCE_BANNER.jpg);
+ */    height: 100vh;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    border: 1px solid red;
+    margin: auto auto;
+    min-width: 50%;
+    backdrop-filter: blur(1);
+    align-items: center;
+    justify-content: center;
+ /*     background-image: url(./assets/TERENCE_BANNER.jpg);
+ */    background-position: center;
+}
+
+.greeting_text {
+    color: #ff4546;
+    font-size: larger;
+}
+
+button {
+    min-width: 10rem;
+    height: 2.5rem;
+    border: none;
+    background-color: #ff4546
+}
