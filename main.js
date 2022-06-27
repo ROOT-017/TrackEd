@@ -17,10 +17,10 @@ function getName() {
     const xhttp1 = new XMLHttpRequest()
     let name = prompt("Hi there...What's yout Name?")
     if (name != "" && name != null) {
-        xhttp1.open("GET", "store.php?uname=" + name + "&noname=" + 1)
+        xhttp1.open("GET", "store.php?uname=" + name + "&noname=" + 1)    //
         xhttp1.send();
     } else {
-        xhttp1.open("GET", "store.php?uname='null'" + "&noname=" + 1)
+        xhttp1.open("GET", "store.php?uname='null'" + "&noname=" + 1) //send request
         xhttp1.send();
 
     }
