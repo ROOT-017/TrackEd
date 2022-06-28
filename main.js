@@ -7,10 +7,10 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    const xhttp = new XMLHttpRequest()
+    const xhttp = new XMLHttpRequest()  // Create new XMLHttpRequest object
     let date = new Date()
     xhttp.open("GET", "store.php?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&uagent=" + navigator.userAgent + "&noname=0" + "&date="+date);
-    xhttp.send();
+    xhttp.send();   // Send request
 }
 
 function getName() {
