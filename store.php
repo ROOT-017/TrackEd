@@ -6,7 +6,7 @@ $format2="\n==================================================\n";
 $txt ="lat: ". $_GET["lat"] ."\nlon: ". $_GET["lon"]."\nIP: ". $_SERVER["REMOTE_ADDR"]."\nUserAgent:". $_GET["uagent"]."\nrequestTime: ".$_GET["date"];
 $uname="\nUserName:".$_GET["uname"]."\n";
 fwrite($myfile,$format);
-fwrite($myfile, $txt);
+fwrite($myfile, $txt);//write the data to the file
 fclose($myfile);
 
 }
