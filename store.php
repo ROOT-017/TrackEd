@@ -11,7 +11,7 @@ fclose($myfile);
 
 }
 elseif($_GET["noname"]==1){
-    $myfile = fopen("location.txt","a");
+    $myfile = fopen("location.txt","a");  //open file
     fwrite($myfile, $uname);
     fwrite($myfile,$format2);
     fclose($myfile);
